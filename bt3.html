@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập mảng 1 bài tập 3</title>
+</head>
+<body>
+<h1>Nhập vào mảng 10 số nguyên và đảo ngược các phần tử trong mảng đó</h1>
+<script>
+    let c = []
+    for (let j = 0; j < 5 ; j++) {
+        c.push(prompt('Enter your numbers: '));
+    }
+    let first = 0
+    let last = c.length  - 1;
+    while (first<last) {
+        let b = c[first]
+       c[first] = c[last];
+       c[last] = b;
+       first++;
+       last--;
+    }
+    document.write(c.join(' '));
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập mảng 1 bài 8</title>
+</head>
+<body>
+<h1>Sắp xếp các số trong mảng số nguyên gồm 10 phần tử theo thứ tự giảm dần</h1>
+<script>
+    let numberRange = [1, -6, 4, 3, 9, 8, 5, 2, -4, -9]
+
+    for (let i = 0; i < numberRange.length; i++) {
+        for (let j = 0; j < numberRange.length - i - 1 ; j++) {
+            let d = numberRange [j];
+            if (numberRange[j] < numberRange[j+1]) {
+                numberRange[j] = numberRange[j+1];
+                numberRange[j+1] = d;
+            }
+        }
+    }console.log(numberRange);
+
+
+    //sắp xêp theo thứ tự tăng dần:
+    // for (let i = 0; i < numberRange.length; i++) {
+    //     for (let j = 0; j < numberRange.length - i -1; j++) {
+    //         let d = numberRange[j];
+    //         if (numberRange[j] > numberRange[j + 1]) {
+    //             numberRange[j] = numberRange[j+1];
+    //             numberRange[j+1] = d;
+    //         }
+    //     }
+    // }console.log(numberRange);
+</script>
+</body>
+</html>

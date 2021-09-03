@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập mảng 1 bài tập 4</title>
+</head>
+<body>
+<h1>Khởi tạo mảng số nguyên rồi tìm giá trị lớn nhất và tính trung bình phần tử của mảng đó</h1>
+<script>
+    let integer = [1, 3, 4, 5, 7, 2, 16, 22, 11, 14]
+    let max = integer[0]
+    let total = 0
+    for (let i = 0; i < integer.length; i++) {
+        if (integer[i] > max) {
+            max = integer[i];
+        }
+        total = total + integer[i]
+        average = total / integer.length
+    } document.write("Max is: " + max + "<br>" + "Average is " + average)
+
+
+
+</script>
+</body>
+</html>
